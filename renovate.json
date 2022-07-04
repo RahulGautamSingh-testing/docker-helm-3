@@ -3,12 +3,15 @@
   "extends": [
     "github>renovatebot/.github"
   ],
-   "depTypes": [
-      "dependencies",
-      "devDependencies",
-      {
-        "depType": "optionalDependencies",
-        "labels": ["renovate", "optional"]
-      }
-    ]
+  "packageRules": [
+    {
+      "labels": [
+        "renovate",
+        "optional"
+      ],
+      "matchDepTypes": [
+        "optionalDependencies"
+      ]
+    }
+  ]
 }
