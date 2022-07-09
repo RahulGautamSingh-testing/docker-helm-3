@@ -5,7 +5,7 @@
   ],
     "node":{
     "enabled": true
-  }
+  },
    "depTypes": [
       "dependencies",
       "devDependencies",
