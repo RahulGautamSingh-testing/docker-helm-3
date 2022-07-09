@@ -3,6 +3,9 @@
   "extends": [
     "github>renovatebot/.github"
   ],
+    "node":{
+    "enabled": true
+  }
    "depTypes": [
       "dependencies",
       "devDependencies",
@@ -10,8 +13,5 @@
         "depType": "optionalDependencies",
         "labels": ["renovate", "optional"]
       }
-    ],
-  "node":{
-    "enabled": true
-  }
+    ]
 }
