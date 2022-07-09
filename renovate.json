@@ -3,15 +3,18 @@
   "extends": [
     "github>renovatebot/.github"
   ],
-    "node":{
+  "travis": {
     "enabled": true
   },
-   "depTypes": [
-      "dependencies",
-      "devDependencies",
-      {
-        "depType": "optionalDependencies",
-        "labels": ["renovate", "optional"]
-      }
-    ]
+  "packageRules": [
+    {
+      "labels": [
+        "renovate",
+        "optional"
+      ],
+      "matchDepTypes": [
+        "optionalDependencies"
+      ]
+    }
+  ]
 }
