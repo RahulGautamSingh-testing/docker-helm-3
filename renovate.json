@@ -10,5 +10,6 @@
         "depType": "optionalDependencies",
         "labels": ["renovate", "optional"]
       }
-    ]
+    ],
+  "node":{"enabled":true}
 }
